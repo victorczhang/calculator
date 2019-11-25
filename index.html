@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class='screen'>
+            <!-- <input placeholder='enter in your nums'> -->
+            <h1 id='screen'>0</h1>
+       </div>
+        <div class='operators'>
+            <div>
+                <button value='+' class='operators-child' id='add' onclick="operatorSelector(this)">&#65291</button>
+            </div>
+            <div>
+                <button value='-' class='operators-child' id='subtract' onclick="operatorSelector(this)">&#65293</button>
+            </div>
+            <div>
+                <button value='*' class='operators-child' id='multiply' onclick="operatorSelector(this)">&#215</button>
+            </div>
+            <div>
+                <button value='/' class='operators-child' id='divide' onclick="operatorSelector(this)">&#xF7</button>
+            </div>
+            <div>
+                <button class='operators-child' id='equals' onclick='operate()'>&#61</button>
+            </div>
+            <div>
+                <button class='operators-child' id='backspace' onclick='backspace()'>&#x3c</button>
+            </div>
+        </div>
+        <div class='numbers'>
+            <div class='numbers-child'>
+                <button class='num' id='seven' value=7 onclick='entry(this)'>7</button>
+            </div>
+            <div class='numbers-child'>
+                <button class='num' id='eight' value=8 onclick='entry(this)'>8</button>
+            </div>
+            <div class='numbers-child'>
+                <button class='num' id='nine' value=9 onclick='entry(this)'>9</button>
+            </div>
+            <div class='numbers-child'>
+                <button class='num' id='four' value=4 onclick='entry(this)'>4</button>
+            </div>
+            <div class='numbers-child'>
+                <button class='num' id='five' value=5 onclick='entry(this)'>5</button>
+            </div>
+            <div class='numbers-child'>
+                <button class='num' id='six' value=6 onclick='entry(this)'>6</button>
+            </div>
+            <div class='numbers-child'>
+                <button class='num' id='one' value=1 onclick='entry(this)'>1</button>
+            </div>
+            <div class='numbers-child'>
+                <button class='num' id='two' value=2 onclick='entry(this)'>2</button>
+            </div>
+            <div class='numbers-child'>
+                <button class='num' id='three' value=3 onclick='entry(this)'>3</button>
+            </div>
+            <div class='numbers-child'>
+                <button class='num' id='zero' value=0 onclick='entry(this)'>0</button>
+            </div>
+            <div>
+                <button value='.' class='operators-child' id='decimal'>.</button>
+            </div>
+            <div>
+                <button class='operators-child' id='clear' value=0 onclick="clearEntry()">C</button>
+            </div>
+        </div>
+    </body>
+    <script src='math.js'></script>
+</html>
