@@ -26,7 +26,7 @@
                 <button class='operators-child' id='equals' onclick='operate()'>&#61</button>
             </div>
             <div>
-                <button class='operators-child' id='backspace' onclick='backspace()'>&#x3c</button>
+                <button class='operators-child' id='backspace' onclick='backspace()'>Del</button>
             </div>
         </div>
         <div class='numbers'>
@@ -61,7 +61,7 @@
                 <button class='num' id='zero' value=0 onclick='entry(this)'>0</button>
             </div>
             <div>
-                <button value='.' class='operators-child' id='decimal'>.</button>
+                <button value='.' class='operators-child' id='decimal' onclick='entry(this)'>.</button>
             </div>
             <div>
                 <button class='operators-child' id='clear' value=0 onclick="clearEntry()">C</button>

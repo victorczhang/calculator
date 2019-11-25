@@ -35,8 +35,10 @@ button {
     /* align-content: center; */
     margin: 0 auto;
     width: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     flex-wrap: wrap;
+    /* background: lightgrey;
+    border-radius: 20px; */
 }
 
 .numbers {
@@ -51,6 +53,8 @@ button {
     /* flex: auto; */
     margin: 0 auto;
     /* padding: 10px; */
+    /* background: lightgrey;
+    border-radius: 20px; */
 } 
 
 .operators-child {
@@ -124,8 +128,10 @@ button {
     /* height: 50px; */
     margin: 0 auto;
     padding: 10px 0;
-    /* margin-top: 20px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
     /* background:grey; */
+    border-radius: 10px;
 }
 
 .num {

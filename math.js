@@ -36,20 +36,17 @@ function entry(e) {
         var numValue = e.value;
         secondInputArray.push(numValue);
         secondValue = secondInputArray.join('');
-        secondStrToNum = parseInt(secondValue);
-        y = secondStrToNum;
+        secondStrToNum = Number(secondValue);
+        y = Math.round(secondStrToNum * 100) / 100;
         document.getElementById('screen').innerHTML = y;
     } else {
         // FIRST ENTRY BELOW
         var numValue = e.value;
         firstInputArray.push(numValue);
         firstValue = firstInputArray.join('');
-        firstStrToNum = parseInt(firstValue);
-        x = firstStrToNum;
-        // console.log(x);
-        // console.log(typeof x);
+        firstStrToNum = Number(firstValue);
+        x = Math.round(firstStrToNum * 100) / 100;
         document.getElementById('screen').innerHTML= x;
-        // return firstStrToNum;
     };
 };
 
@@ -111,13 +108,13 @@ function backspace() {
     if (!operator) {
         firstInputArray.pop();
         var firstValue = firstInputArray.join('');
-        var firstStrToNum = parseInt(firstValue);
+        var firstStrToNum = Number(firstValue);
         x = firstStrToNum;
         document.getElementById('screen').innerHTML = x;
     } else {
         secondInputArray.pop();
         var secondValue = secondInputArray.join('');
-        var secondStrToNum = parseInt(secondValue);
+        var secondStrToNum = Number(secondValue);
         y = secondStrToNum;
         document.getElementById('screen').innerHTML = y;
     }
